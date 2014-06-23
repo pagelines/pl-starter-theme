@@ -40,7 +40,7 @@ class pl_your_theme {
 		// Adding a custom LESS var, use this in LESS as @my-var. In this example, its linked to a custom color picker in options. We also must set a default or else it's going to error.
 		// pl_hashify must be used with color pickers so that it appends the # symbol to the hex code
 		// pl_setting is being used because this is a global option used in the theme
-		$less['my-var']   =  pl_setting('my_custom_color') ? pl_hashify(pl_setting('my_custom_color')) : '#07C';
+		$less['my-var']   =  pl_setting('my_custom_color') ? pl_hashify(pl_setting('my_custom_color')) : 'f7f7f7';
 
 		return $less;
 	}
