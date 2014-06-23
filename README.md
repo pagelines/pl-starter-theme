@@ -1,2 +1,3 @@
-starter-theme
-=============
+PageLines Starter Theme
+===========
+
