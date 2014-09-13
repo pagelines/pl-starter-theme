@@ -13,7 +13,7 @@ class pl_your_theme {
 		$this->dir = sprintf('/%s', PL_CHILD_DIR);
 
 		// Add a filter so we can build a few custom LESS vars
-		add_filter( 'pless_vars', array(&$this,'custom_less_vars'));
+		add_filter( 'pless_vars', array($this,'custom_less_vars'));
 
 		$this->init();
 	}
@@ -24,7 +24,7 @@ class pl_your_theme {
 		$this->theme_options();
 
 		// Send the user to the Theme Config panel after they activate.
-		add_filter('pl_activate_url', array(&$this,'activation_url'));
+		add_filter('pl_activate_url', array($this,'activation_url'));
 	}
 
 	// Send the user to the Theme Config panel after they activate. Note how link=pl_theme_config is the same name of the array settings. This must match.
